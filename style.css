@@ -1,0 +1,77 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    overflow: hidden;
+}
+
+footer {
+    padding: 1em;
+    background-color: lightgray;
+}
+
+.main__wrappepr {
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 2em 2em 2em 9em;
+    display: grid;
+    justify-content: center;
+}
+
+.main {
+    width: 500vw;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    overflow: hidden;
+    transition: margin-left .5s ease-in-out;
+}
+
+.nav {
+    position: fixed;
+    height: 100vh;
+    width: 9em;
+    display: grid;
+    align-content: center;
+}
+
+.nav__all-items {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav__menu-item {
+    padding: .5em 1em;
+    background: #333;
+    margin: .5em 0;
+    text-align: center;
+}
+
+.nav__menu-item:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #333333;
+}
+
+.nav__icon {
+    float: right;
+    color: #333333;
+}
+
+.nav__menu-item:hover .nav__icon {
+    color: #ffffff;
+}
+
+.nav__menu-item.nav--active .nav__icon {
+    color: darkslategray;
+}
+
+h2 {
+    margin: 0;
+}
+
+.bcolor--red {background-color: red}
+.bcolor--yellow {background-color: yellow}
+.bcolor--blue {background-color: blue}
+.bcolor--green {background-color: green}
+.bcolor--orange {background-color: orange}
